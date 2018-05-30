@@ -122,7 +122,7 @@ void loopMotor()
   }
   
   Serial.println("valueCount.." + (String)valueCount);
-  delay(10);
+  delay(100);
   handleMovingCoilMeter();
 }
 
@@ -161,8 +161,8 @@ void checkWall()
     valueCount = 50;
   }
 
-    analogWrite(aoNeg, outputValuePos);
-    analogWrite(aoPos, outputValueNeg);
+  analogWrite(aoNeg, outputValuePos);
+  analogWrite(aoPos, outputValueNeg);
  
   
 }
